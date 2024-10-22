@@ -61,7 +61,7 @@
 <body>
 <div class="container">
         <div class="profile-pic">
-            <img src="" alt="Foto Profil">
+            <img src="{{ asset('assets/img/Profile.jpg') }}"alt="Deskripsi Gambar">
         </div>
         <div class="info-box">
             <div class="box">
