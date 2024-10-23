@@ -18,8 +18,12 @@
                 <td><input type="text" id="npm" name="npm"></td>
             </tr>
             <tr>
-                <td><label for="kelas">Kelas:</label></td>
-                <td><input type="text" id="kelas" name="kelas"></td>
+                <label for="id_kelas">Kelas:</label><br>
+                <select name="kelas_id" id="kelas_id" name="kelas" required>
+                    @foreach ($kelas as $kelasItem)
+                    <option value = "{{$kelasItem->id}}">{{$kelasItem->nama_kelas}}</option>
+                    @endforeach
+                </select>
             </tr>
             <tr>
                 <td colspan="2">

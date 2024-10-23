@@ -17,7 +17,9 @@ class UserController extends Controller
            return view('profile', $data);
     }
     public function create(){
-        return view('create_user');
+        return view('create_user', [
+            'kelas' => Kelas::all(),
+        ]);
        }
 
     public function store(Request $request){
